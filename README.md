@@ -1,4 +1,4 @@
-Simple REST api to test the [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html) service.
+Simple REST api to test the [Amazon EC2](https://docs.aws.amazon.com/ec2/index.html) service.
 
 ## Running
 
@@ -13,8 +13,6 @@ Run ```go run .```
 Run ```docker build -t microservice-test .```
 
 Then ```docker run --rm -p 8080:8080 microservice-test```
-
-<!-- TODO: Running on Docker -->
 
 ## Endpoints
 
