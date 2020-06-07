@@ -10,6 +10,10 @@ Run ```go run .```
 
 ### Docker
 
+Run ```docker build -t microservice-test .```
+
+Then ```docker run --rm -p 8080:8080 microservice-test```
+
 <!-- TODO: Running on Docker -->
 
 ## Endpoints

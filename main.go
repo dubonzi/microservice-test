@@ -5,13 +5,16 @@ import (
 	"net/http"
 )
 
+const port = ":8080"
+
 func main() {
 
-	server := http.Server{Addr: ":8080"}
+	server := http.Server{Addr: port}
 
 	http.HandleFunc("/", RootHandler)
 	http.HandleFunc("/thanks", ThanksHandler)
 
+	log.Printf("Running on port %s", port)
 	log.Println("[ERROR] server.ListenAndServe: ", server.ListenAndServe())
 }
 
